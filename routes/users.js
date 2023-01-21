@@ -1,5 +1,6 @@
 var express = require("express");
 var router = express.Router();
+// const dotenv = require("dotenv");
 var randomstring = require("randomstring");
 const { default: mongoose } = require("mongoose");
 const { dbUrl } = require("../config/dbConfig");
@@ -13,6 +14,7 @@ const {
   validate,
 } = require("../config/auth");
 mongoose.set("strictQuery", false);
+// dotenv.config();
 /* GET users listing. */
 mongoose.connect(dbUrl);
 router.get("/verify", validate, async (req, res) => {

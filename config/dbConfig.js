@@ -1,3 +1,4 @@
+const dotenv = require("dotenv").config();
 const mongodb = require("mongodb");
 const mongoose = require("mongoose");
 const dbName = process.env.DB_NAME;
