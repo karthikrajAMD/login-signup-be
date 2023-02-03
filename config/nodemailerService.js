@@ -13,7 +13,7 @@ const nodemailerService = async (toAddress, myLink) => {
       service: "gmail",
       auth: {
         user: "karthikraja.a.ece@gmail.com", // generated ethereal user
-        pass: "jpexcgagfdqxijic", // generated ethereal password
+        pass: "jpxdjdhpfuizgnld", // generated ethereal password
       },
     });
 
